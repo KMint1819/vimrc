@@ -4,3 +4,6 @@
 [submodule "my_plugins/vim-searchindex"]
 	path = my_plugins/vim-searchindex
 	url = https://github.com/google/vim-searchindex.git
+[submodule "my_plugins/vim-devicons"]
+	path = my_plugins/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons

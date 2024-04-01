@@ -1,4 +1,15 @@
 ![VIM](https://dnp4pehkvoo6n.cloudfront.net/43c5af597bd5c1a64eb1829f011c208f/as/Ultimate%20Vimrc.svg)
+# Prerequisites
+- [ ] NerdFont (I use JetBrainsMono in this case)
+```bash
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+unzip JetBrainsMono.zip -d JetBrainsMono/
+mkdir -p /usr/share/fonts/truetype/
+mv JetBrainsMono/*.ttf /usr/share/fonts/truetype/
+fc-cache -f -v
+```
+Dont forget to update your terminal font to this nerd font as well!
+
 
 ### Install for your own user only
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
