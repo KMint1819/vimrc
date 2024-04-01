@@ -10,22 +10,17 @@ fc-cache -f -v
 ```
 Dont forget to update your terminal font to this nerd font as well!
 
+# Functionalities that should be included
+- language
+    - autocomplete
+    - goto definition
+    - debugger
+    - linter
+    - formatter 
 
-### Install for your own user only
-The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
-
-	git clone --recursive https://github.com/KMint1819/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh
-	
-### Install for multiple users
-To install for multiple users, the repository needs to be cloned to a location accessible for all the intended users.
-
-	git clone --depth=1 https://github.com/KMint1819/vimrc.git /opt/vim_runtime
-	sh /opt/vim_runtime/install_awesome_parameterized.sh /opt/vim_runtime user0 user1 user2
-	# to install for all users with home directories, note that root will not be included
-	sh /opt/vim_runtime/install_awesome_parameterized.sh /opt/vim_runtime --all
-	
-Naturally, `/opt/vim_runtime` can be any directory, as long as all the users specified have read access.
+# Promising plugins
+- [ ] https://github.com/vim-autoformat/vim-autoformat 
+- [ ] https://github.com/mhinz/vim-signify :Highlights modification compared to last commit 
 
 ## How to update to latest version?
 
@@ -77,21 +72,6 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs
 * [copilot.vim](https://github.com/github/copilot.vim) Plugin for GitHub Copilot (AI autocompletion FTW 😅)
 
-
-## Included color schemes
-
-Type `:colorscheme <Tab>` to try out color schemes on the fly,
-or add the command to `~/.vim_runtime/my_configs.vim` (see [below](#how-to-include-your-own-stuff)),
-for example `colorscheme pyte`.
-
-* [peaksea](https://github.com/vim-scripts/peaksea): The default
-* [dracula](https://github.com/dracula/vim)
-* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
-* [vim-irblack](https://github.com/wgibbs/vim-irblack)
-* [mayansmoke](https://github.com/vim-scripts/mayansmoke)
-* [vim-pyte](https://github.com/therubymug/vim-pyte)
-
-
 ## Included modes
 
 * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
@@ -104,32 +84,6 @@ for example `colorscheme pyte`.
 * [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
 * [vim-python-pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent)
-
-
-## How to include your own stuff?
-
-After you have installed the setup,
-create an empty `~/.vim_runtime/my_configs.vim` file for further customization.
-This file's syntax matches `vimrc` syntax,
-and add `vimrc` lines like `set number` as needed.
-
-For instance, my `my_configs.vim` looks like this:
-
-	~/.vim_runtime > cat my_configs.vim
-	map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
-	map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr> 
-
-You can also install your plugins, for instance, via pathogen you can install [vim-rails](https://github.com/tpope/vim-rails):
-
-	cd ~/.vim_runtime
-	git clone git://github.com/tpope/vim-rails.git my_plugins/vim-rails
-
-You can also install plugins without any plugin manager (vim 8+ required):
-
-* Create pack plugin directory:\
-`mkdir -p ~/.vim_runtime/pack/plugins/start`
-* Clone the plugin that you want in that directory, for example:\
-`git clone --depth=1 git://github.com/maxmellon/vim-jsx-pretty  ~/.vim_runtime/pack/plugins/start/vim-jsx-pretty`
 
 
 ## Key Mappings
@@ -377,11 +331,6 @@ map <leader>p :cp<cr>
 Just do following:
 * Remove `~/.vim_runtime`
 * Remove any lines that reference `.vim_runtime` in your `~/.vimrc`
-
-
-## Looking for a remote-first job?
-
-Maintaining this Vim configuration isn't my day job. Daily I am the founder/CEO of [Doist](https://doist.com/). You could come and help us build the workplace of the future while living a balanced life (anywhere in the world 🌍🌎🌏).
 
 PS: Using Vim isn't a requirement 😄
 
