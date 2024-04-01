@@ -1,4 +1,6 @@
 ![VIM](https://dnp4pehkvoo6n.cloudfront.net/43c5af597bd5c1a64eb1829f011c208f/as/Ultimate%20Vimrc.svg)
+
+
 # Prerequisites
 - [ ] NerdFont (I use JetBrainsMono in this case)
 ```bash
@@ -9,6 +11,12 @@ mv JetBrainsMono/*.ttf /usr/share/fonts/truetype/
 fc-cache -f -v
 ```
 Dont forget to update your terminal font to this nerd font as well!
+
+# Install for your own user only
+The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
+
+	git clone --recursive https://github.com/KMint1819/vimrc.git ~/.vim_runtime
+	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 # Functionalities that should be included
 - language
