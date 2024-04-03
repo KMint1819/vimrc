@@ -18,6 +18,10 @@ The awesome version includes a lot of great plugins, configurations and color sc
 	git clone --recursive https://github.com/KMint1819/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
+If you encounter this error when including C++ standard headers:
+`file not found [pp_file_not_found]`
+try installing g++-12. i.e `sudo apt install g++-12`. See the clangd issue [here](https://github.com/clangd/clangd/issues/1394).
+
 # TODO
 ## Functionalities that should be included
 - language
