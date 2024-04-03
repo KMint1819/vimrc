@@ -18,13 +18,15 @@ The awesome version includes a lot of great plugins, configurations and color sc
 	git clone --recursive https://github.com/KMint1819/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
-# Functionalities that should be included
+# TODO
+## Functionalities that should be included
 - language
     - autocomplete
     - goto definition
     - debugger
     - linter
     - formatter 
+## Functionalities that should be removed
 
 # Promising plugins
 - [ ] https://github.com/vim-autoformat/vim-autoformat 
