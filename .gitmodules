@@ -10,3 +10,6 @@
 [submodule "my_plugins/YouCompleteMe"]
 	path = my_plugins/YouCompleteMe
 	url = git@github.com:ycm-core/YouCompleteMe.git
+[submodule "my_plugins/editorconfig-vim"]
+	path = my_plugins/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
