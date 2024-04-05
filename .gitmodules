@@ -13,3 +13,6 @@
 [submodule "my_plugins/editorconfig-vim"]
 	path = my_plugins/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "my_plugins/vim-autoformat"]
+	path = my_plugins/vim-autoformat
+	url = https://github.com/vim-autoformat/vim-autoformat

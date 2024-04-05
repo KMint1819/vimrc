@@ -19,6 +19,7 @@ endtry' > ~/.vimrc
 
 cd ~/.vim_runtime/my_plugins/
 cd YouCompleteMe/
-python install.py --clangd-completer --ts-completer --verbose
+python3 install.py --clangd-completer --ts-completer --verbose
+
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
